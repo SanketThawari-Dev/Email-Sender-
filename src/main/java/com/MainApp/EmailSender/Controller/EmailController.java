@@ -14,7 +14,7 @@ public class EmailController {
     @GetMapping("/sendEmail")
     public String sendEmail() {
         try {
-            sendEmail.sendEmail("sanketvthawari@gmail.com", "Testing Java mail sender", "Hi, Bokachcccoda");
+            sendEmail.sendEmail("ReceiverEmailAddress@gmail.com", "Testing Java mail sender", "Hi, The Email has reachead to its destination");
             return "Email sent successfully!";
         } catch (Exception e) {
             return "Error while sending email: " + e.getMessage();
