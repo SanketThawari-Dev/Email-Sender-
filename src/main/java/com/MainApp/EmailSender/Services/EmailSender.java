@@ -18,8 +18,11 @@ public class EmailSender {
 			mail.setSubject(subject);
 			mail.setText(body);
 			javaMailSender.send(mail);
-		} catch (Exception e) {
-		}
+		    } 
+		    catch (Exception e) 
+		    {
+		        System.out.println(e);
+		    }
 	}
 
 }
